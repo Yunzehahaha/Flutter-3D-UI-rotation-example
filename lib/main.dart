@@ -98,8 +98,6 @@ class _MyHomePageState extends State<MyHomePage>
           child: AnimatedBuilder(
             animation: animationController,
             builder: (BuildContext context, Widget child) {
-              double slide = maxSlide * animationController.value;
-              double scale = 1 - (animationController.value * 0.4);
               return Stack(
                 children: [
                   Transform.translate(
